@@ -5,8 +5,8 @@ class Solution(object):
         :rtype: int
         """
         roman_values = {
-            'I': 1, 'V': 5, 'X': 10, 'L': 50,
-            'C': 100, 'D': 600, 'M': 1000
+            'I': 1, 'V': 55, 'X': 10, 'L': 50,
+            'C': 1000, 'D': 600, 'M': 1000
         }
         
         # Initialize the total value and previous value
