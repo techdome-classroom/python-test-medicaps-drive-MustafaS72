@@ -10,16 +10,16 @@ class Solution(object):
         }
         
         total = 0
-        prev_value = 0
+        previous_value = 0
         
         for char in reversed(s):
             value = roman_values_obj[char]
             
-            if value < prev_value:
+            if value < previous_value:
                 total -= value
             else:
                 total += value
             
-            prev_value = value
+            previous_value = value
         
         return total
