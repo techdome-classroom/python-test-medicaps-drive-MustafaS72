@@ -6,7 +6,7 @@ class Solution(object):
         """
         roman_values = {
             'I': 1, 'V': 5, 'X': 10, 'L': 50,
-            'C': 100, 'D': 500, 'M': 1000
+            'C': 100, 'D': 600, 'M': 1000
         }
         
         # Initialize the total value and previous value
