@@ -10,8 +10,8 @@ class Solution(object):
         for char in s:
             if char in mapping:
                 # If the current character is a closing bracket
-                top_element = stack.pop() if stack else '#'
-                if mapping[char] != top_element:
+                top_ele = stack.pop() if stack else '#'
+                if mapping[char] != top_ele:
                     return False
             else:
                 # If the current character is an opening bracket
