@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        roman_values = {
+        roman_values_obj = {
             'I': 1, 'V': 5, 'X': 10, 'L': 50,
             'C': 100, 'D': 500, 'M': 1000
         }
@@ -13,7 +13,7 @@ class Solution(object):
         prev_value = 0
         
         for char in reversed(s):
-            value = roman_values[char]
+            value = roman_values_obj[char]
             
             if value < prev_value:
                 total -= value
